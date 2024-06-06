@@ -9,11 +9,11 @@ import { Card } from "../../model/cards/card";
 const cardRepository = new CardRepository();
 
 export const cardRoute = new Elysia()
-    .post("/cards", async ({ body }) => {
-    const { description, board } = body;
+    .post("boards/createCards", async ({ body, params }) => {
+    const { description, board} = body;
     const newCard = new Card(description);
-    const [user] = await db.select().from(boards).where(eq(boards.name, board))
-    cardRepository.createCard(newCard, user);
+    const [selectedBoard] = await db.select().from(boards).where(eq(boards.id, board))
+    cardRepository.createCard(newCard, selectedBoard);
 },{
     body: t.Object({
         description: t.String(),
