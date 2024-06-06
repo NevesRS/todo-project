@@ -1,14 +1,14 @@
 import Elysia, { t } from "elysia";
 import { UserRepository } from "../../repository/users/user";
-import { User } from "../../model/user/user";
+import { UserService } from "../../service/user/user"
 
 const userRepository = new UserRepository();
+const userService = new UserService(userRepository);
 
 export const userRoute = new Elysia()
     .post("/users", async ({ body }) => {
     const { nickname, password } = body;
-    const newUser = new User(nickname, password);
-    userRepository.createUser(newUser);
+    userService.createUser(nickname, password);
 },{
     body: t.Object({
         nickname: t.String(),
