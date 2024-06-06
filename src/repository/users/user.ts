@@ -1,6 +1,6 @@
-import { users } from "../infrastructure/db/schemas";
-import { db } from "../infrastructure/migrate";
-import type { UserInterface } from "../model/user/user";
+import { users } from "../../infrastructure/db/schemas";
+import { db } from "../../infrastructure/migrate";
+import type { UserInterface } from "../../model/user/user";
 
 export class UserRepository {
     async createUser(user: UserInterface): Promise<void> {
