@@ -20,5 +20,5 @@ As rotas da aplicação estão atualmente em construção e serão adicionadas e
 
 ## Contribuição
 
-Como este é um projeto inicial, contribuições e sugestões de melhorias são bem-vindas. Sinta-se à vontade para abrir problemas ou enviar solicitações de pull com suas contribuições.
+Como este é um projeto inicial, contribuições e sugestões de melhorias são bem-vindas. Sinta-se à vontade para abrir algum issue ou enviar pull requests com contribuições.
 
