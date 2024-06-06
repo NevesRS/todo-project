@@ -9,7 +9,7 @@ import { Card } from "../../model/cards/card";
 const cardRepository = new CardRepository();
 
 export const cardRoute = new Elysia()
-    .post("boards/createCards", async ({ body, params }) => {
+    .post("boards/createCards", async ({ body }) => {
     const { description, board} = body;
     const newCard = new Card(description);
     const [selectedBoard] = await db.select().from(boards).where(eq(boards.id, board))
