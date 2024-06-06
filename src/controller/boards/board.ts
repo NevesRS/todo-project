@@ -1,6 +1,5 @@
 import Elysia, { t } from "elysia";
 
-import { User } from "../../model/user/user";
 import { BoardRepository } from "../../repository/boards/board";
 import { Board } from "../../model/boards/board";
 import { db } from "../../infrastructure/migrate";

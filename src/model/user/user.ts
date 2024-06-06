@@ -1,11 +1,11 @@
 export interface UserInterface {
-    id: string | null;
+    id: string;
     nickname: string;
     password: string;
 }
 
 export class User implements UserInterface {
-    id: string | null;
+    id: string;
     nickname: string;
     password: string;
 
