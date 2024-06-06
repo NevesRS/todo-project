@@ -1,24 +1,27 @@
-# Organizador de Tarefas
+# Task Organizer
 
-Este repositório contém uma aplicação simplificada para organização de tarefas. O objetivo é criar um ambiente onde os usuários possam facilmente criar, armazenar e editar seus quadros de tarefas, cada um contendo suas atividades relevantes. Este documento abrange todos os aspectos da aplicação, incluindo sua arquitetura, rotas entre outras informações pertinentes.
+This repository contains a simplified application for task organization. The goal is to create an environment where users can easily create, store, and edit their task boards, each containing relevant activities. This document covers all aspects of the application, including its architecture, routes, and other pertinent information.
 
-## Visão Geral
+## Overview
 
-Esta aplicação permite que os usuários criem quadros de tarefas personalizados e gerenciem suas atividades associadas. O sistema de login simples garante que apenas usuários autenticados possam acessar e modificar seus quadros e tarefas. Cada quadro está vinculado a um usuário específico, assim como cada atividade está vinculada a um quadro.
+This application allows users to create customized task boards and manage their associated activities. A simple login system ensures that only authenticated users can access and modify their boards and tasks. Each board is linked to a specific user, just as each activity is linked to a board.
 
+## Tools
+- Bun
+- Elysia
+- Drizzle
 
-## Arquitetura
+## Architecture
 
-- **Controller:** Responsável por gerenciar todas as rotas da aplicação, proporcionando a interface principal entre o usuário e o sistema.
-- **Infrastructure:** Encarrega-se das operações diretas relacionadas ao banco de dados, incluindo configuração de conexão e gerenciamento de tabelas.
-- **Model:** Contém as interfaces, classes e modelos utilizados na aplicação, definindo a estrutura dos dados.
-- **Repository:** Atua como intermediário entre a aplicação e o banco de dados, manipulando operações como inserções e seleções, responsável pelo envio e recuperação dos dados.
+- **Controller:** Responsible for managing all the application routes, providing the main interface between the user and the system.
+- **Infrastructure:** Handles direct operations related to the database, including connection configuration and table management.
+- **Model:** Contains the interfaces, classes, and models used in the application, defining the data structure.
+- **Repository:** Acts as an intermediary between the application and the database, handling operations like insertions and selections, responsible for sending and retrieving data.
 
-## Rotas
+## Routes
 
-As rotas da aplicação estão atualmente em construção e serão adicionadas em breve.
+The application routes are currently under construction and will be added soon.
 
-## Contribuição
+## Contribution
 
-Como este é um projeto inicial, contribuições e sugestões de melhorias são bem-vindas. Sinta-se à vontade para abrir algum issue ou enviar pull requests com contribuições.
-
+As this is an initial project, contributions and suggestions for improvements are welcome. Feel free to open an issue or send pull requests with contributions.
